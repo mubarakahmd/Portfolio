@@ -434,3 +434,77 @@ footer {
 footer p {
   text-align: center;
 }
+/* Base styles for the form container */
+.form-container {
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  background-color: #f8f9fa;
+  border-radius: 10;
+}
+
+/* Style for the form content */
+.form-content {
+  padding: 20px;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+  .form-content {
+    padding: 10px;
+  }
+}
+.container {
+max-width: 800px;
+margin: 20px auto;
+background-color: #ffffff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+font-size: 16px;
+}
+
+textarea {
+resize: vertical;
+min-height: 100px;
+}
+
+button {
+background-color: black;
+color: #ffffff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+button:hover {
+background-color:rgb(85, 85, 85);
+}
+
+@media (max-width: 768px) {
+.container {
+padding: 10px;
+}
+}

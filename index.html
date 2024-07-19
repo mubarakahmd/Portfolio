@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.0/dist/email.min.js"></script>
+    
+      <script type="text/javascript">
+        // Initialize EmailJS with your service ID
+        (function(){
+          emailjs.init({
+          publicKey: "S-0BIjInTsWY3D8b7",
+        }); // Replace with your User ID
+        })();
+      </script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -353,18 +363,53 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:mubaraktk952@gmail.com">mubaraktk952@gmail.com</a></p>
+          <p><a href="mailto:mubaraktk952@gmail.com">Gmail</a></p>
         </div>
-        <!-- <div class="contact-info-container">
+        <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/mubarak-ahammed-16631131a/">LinkedIn</a></p>
         </div>
-      </div> -->
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/instalogo.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            style="height: 35px;"
+          />
+          <p><a href="https://www.instagram.com/mubuz._/">Instagram</a></p>
+        </div> -->
+      </div>
     </section>
+    <section>
+      <div class="border mt-3 bg-light form-container">
+          <div class="col-md-12 border-left py-3 form-content">
+            <h1 style="display: flex; justify-content: center;">Leave me a text..!</h1>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <button class="btn btn-primary" onclick="sendMail(event)">Submit</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </body>
+    </section>
+      
     <footer>
       <nav>
         <div class="nav-links-container">
