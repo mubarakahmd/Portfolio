@@ -14,7 +14,7 @@ var typed= new Typed(".texttt",{
 });
 
 function sendMail(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(); 
 
   // Fetch values from the form and trim whitespace
   var name = document.getElementById('name').value.trim();
